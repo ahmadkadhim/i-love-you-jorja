@@ -1,0 +1,1 @@
+"use strict";function fullWidthHearts(){var a=window.innerWidth,b=window.innerHeight;$("#hearts").height(b).width(a)}$(fullWidthHearts),$(window).resize(fullWidthHearts);
