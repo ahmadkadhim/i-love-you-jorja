@@ -1,6 +1,15 @@
 // bower:scss
 // endbower
 
-@import "bourbon/bourbon";
-@import "base/base";
-@import "neat/neat";
+@import "bourbon/_bourbon.scss";
+@import "base/_base.scss";
+@import "neat/_neat.scss";
+
+
+@import "colors.scss";
+@import "typography.scss";
+
+@import "hearts.scss";
+
+@import "medium.scss";
+@import "large.scss";
