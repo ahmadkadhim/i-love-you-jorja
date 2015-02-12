@@ -34,11 +34,11 @@ setTimeout(function() {
 
 setTimeout(function() {
 	$('#happy-valentines').removeClass('hide');
-}, 26500);
+}, 24500);
 
 setTimeout(function() {
 	$('#made-by').removeClass('hide');
-}, 30500);
+}, 28500);
 
 
 particlesJS('particles', {

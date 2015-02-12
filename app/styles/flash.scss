@@ -19,73 +19,64 @@ canvas{
 }
 
 $color-1: #361134;
-$color-1-white: #361134;
+$color-1-white: #763154;
 $color-2: #FF3F6F;
-$color-2-white: #FF3F6F;
+$color-2-white: #FF6F9F;
 $color-3: #BA337C;
-$color-3-white: #BA337C;
+$color-3-white: #DA73AC;
 $color-4: #910E66;
-$color-4-white: #910E66;
+$color-4-white: #C15EA6;
 $color-5: #EBC3DB;
-$color-5-white: #EBC3DB;
+$color-5-white: #FBDCEE;
 
 @-webkit-keyframes pulse { 
 	0% {background-color: #000;} 
 	7% {background-color: #000;} 
 	
 	10% {background-color: #fff;} 
-	// 12% {background-color: #fff;} 
 
 	11% {background-color: $color-4;} 
 	15% {background-color: $color-4;} 
-	// 15.5% {background-color: #fff;}
+	15.5% {background-color: $color-1-white;}
 
 	16% {background-color: $color-1;} 
 	20% {background-color: $color-1;} 
-	// 20.5% {background-color: #fff;}
 
 	21% {background-color: $color-2;} 
 	24% {background-color: $color-2;} 
-	// 24.5% {background-color: #fff;}
 
 	25% {background-color: $color-3;} 
 	29% {background-color: $color-3;} 
-	// 29.5% {background-color: #fff;}
 
 	30% {background-color: $color-4;} 
 	34% {background-color: $color-4;} 
-	// 34.5% {background-color: #fff;}
+	34.5% {background-color: $color-1-white;}
 
 	35% {background-color: $color-1;} 
 	39% {background-color: $color-1;} 
-	// 39.5% {background-color: #fff;}
 
 	40% {background-color: $color-2;} 
 	44% {background-color: $color-2;} 
-	// 44.5% {background-color: #fff;}
 
 	45% {background-color: $color-3;} 
 	49% {background-color: $color-3;} 
-	// 49.5% {background-color: #fff;}
 
 	50% {background-color: $color-4;} 
 	54% {background-color: $color-4;} 
-	// 55.5% {background-color: #fff;}
+	54.5% {background-color: $color-1-white;} 
 
 	55% {background-color: $color-1;} 
 	59% {background-color: $color-1;} 
-	// 59.5% {background-color: #fff;}
 
 	60% {background-color: $color-2;} 
 	64% {background-color: $color-2;} 
-	// 64.5% {background-color: #fff;}
 
 	65% {background-color: $color-3;} 
 	69% {background-color: $color-3;} 
-	// 69.5% {background-color: #fff;}
 
 	70% {background-color: $color-4;} 
 	74% {background-color: $color-4;} 
+	74.5% {background-color: $color-1-white;} 
 		
 	85% {background-color: #99D2E4;} 
 	
