@@ -1,10 +1,13 @@
+html, body {
+	height: 100%
+}
+
 body {
 	position: relative;
 	margin: 0;
 }
 
-#hearts {
-  background-color: #2C262C;
+#container {
   // @include position(absolute, 0 0 0 0);
   position: absolute;
   top: 0;
@@ -12,6 +15,31 @@ body {
   bottom: 0;
   left: 0;
   overflow: hidden;
+}
+
+#container.flash {
+
+	h1 {
+		display: none;
+	}
+
+	#hearts {
+		display: none;
+	}
+
+}
+
+.hide {
+	opacity: 0;
+}
+
+#hearts {
+	background-color: #2C262C;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .heart{
@@ -22,6 +50,7 @@ body {
   transform:translateZ(0);
   color:#b83B3B;
   position:relative;
+  text-align: center;
 
   &.white {
   	color: rgba(255,255,255,.4);
@@ -32,35 +61,62 @@ body {
     opacity: 0;
 	transform: translateY(-30px) rotateZ(5deg);
 	animation: fly 3500ms cubic-bezier(.17,.67,.86,.81) infinite;
+	-webkit-animation: fly 3500ms cubic-bezier(.17,.67,.86,.81) infinite;
       
       &.delay1 {
       	top: 50px;
         font-size:5em;
         animation-delay: 600ms;
+        -webkit-animation-delay: 600ms;
         z-index: 1;
       }
       &.delay2 {
         top: -20px;
         font-size:2.5em;
         animation-delay: 1100ms;
+        -webkit-animation-delay: 1100ms;
         z-index: 3;
       }
       &.delay3 {
         top: 25px;
         font-size:3.5em;
         animation-delay: 1700ms;
+        -webkit-animation-delay: 1700ms;
         z-index: 3;
       }
       &.delay4 {
         top: 100px;
         font-size:1em;
         animation-delay: 2200ms;
+        -webkit-animation-delay: 2200ms;
         z-index: 1;
       }
       &.delay5 {
         top: 60px;
         font-size:2em;
         animation-delay: 2800ms;
+        -webkit-animation-delay: 2800ms;
+        z-index: 3;
+      }
+      &.delay6 {
+        top: 60px;
+        font-size:.5em;
+        animation-delay: 2800ms;
+        -webkit-animation-delay: 3000ms;
+        z-index: 3;
+      }
+      &.delay7 {
+        top: 60px;
+        font-size:2.25em;
+        animation-delay: 2800ms;
+        -webkit-animation-delay: 3300ms;
+        z-index: 3;
+      }
+      &.delay8 {
+        top: 60px;
+        font-size:2.75em;
+        animation-delay: 2800ms;
+        -webkit-animation-delay: 3600ms;
         z-index: 3;
       }
       
@@ -68,6 +124,28 @@ body {
     
 }
 @keyframes fly{
+  0%{
+    opacity:1; transform: translateY(0px) rotateZ(15deg);
+  }
+  20%{
+    opacity:.85;
+    transform: scale(1.5) translateY(-20px) rotateZ(-10deg);
+  }
+  40%{
+    opacity:.75;
+    transform: scale(2.5) translateY(-40px) rotateZ(15deg);
+  }
+  60%{
+    opacity:.65;
+    transform: scale(3.5) translateY(-60px) rotateZ(-15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(4.5) translateY(-100px) rotateZ(15deg);
+  }
+}
+
+@-webkit-keyframes fly{
   0%{
     opacity:1; transform: translateY(0px) rotateZ(15deg);
   }

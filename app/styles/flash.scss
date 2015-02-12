@@ -1,0 +1,77 @@
+
+
+canvas{
+	display:block;
+	vertical-align:bottom;
+}
+
+#particles {
+	min-height: 100%;
+	// width: 100%;
+	z-index: 4;
+	position: relative;
+}
+
+#container.flash { 
+	background-color: #000;
+	animation: pulse 20s linear;
+	-webkit-animation: pulse 20s linear;
+}
+
+$color-1: #361134;
+$color-2: #FF3F6F;
+$color-3: #BA337C;
+$color-4: #910E66;
+$color-5: #EBC3DB;
+
+@-webkit-keyframes pulse { 
+	0% {background-color: #000;} 
+	7% {background-color: #000;} 
+	
+	10% {background-color: #fff;} 
+	// 12% {background-color: #fff;} 
+
+	11% {background-color: $color-4;} 
+	15% {background-color: $color-4;}
+
+	16% {background-color: $color-1;} 
+	20% {background-color: $color-1;} 
+
+	21% {background-color: $color-2;} 
+	24% {background-color: $color-2;} 
+
+	25% {background-color: $color-3;} 
+	29% {background-color: $color-3;} 
+
+	30% {background-color: $color-4;} 
+	34% {background-color: $color-4;}
+
+	35% {background-color: $color-1;} 
+	39% {background-color: $color-1;} 
+	
+	40% {background-color: $color-2;} 
+	44% {background-color: $color-2;} 
+
+	45% {background-color: $color-3;} 
+	49% {background-color: $color-3;} 
+
+	50% {background-color: $color-4;} 
+	54% {background-color: $color-4;}
+
+	55% {background-color: $color-1;} 
+	59% {background-color: $color-1;} 
+	
+	60% {background-color: $color-2;} 
+	64% {background-color: $color-2;} 
+
+	65% {background-color: $color-3;} 
+	69% {background-color: $color-3;} 
+
+	70% {background-color: $color-4;} 
+	74% {background-color: $color-4;} 
+		
+	85% {background-color: #99D2E4;} 
+	
+	90% {background-color: #2C262C;} 
+	100% {background-color: #2C262C;} 
+}

@@ -24,56 +24,110 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div id="particles"></div>
 
-    <div id="hearts">
+    <div id="container" class="flash">
 
-      <audio src="audio/cant-take-my-eyes-off-of-you.mp3" loop></audio>
+      <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
 
-      <h1>
-        <span id="I">I</span>
-        <span id="LOVE">LOVE</span>
-        <span id="YOU">YOU</span>
-        <br>
-        <span id="Jorja">Jorja</span>
+      <audio src="audio/cant-take-my-eyes-off-of-you.mp3" autoplay loop></audio>
+
+      <h1 id="i-love-you">
+        <span id="I" class="hide">I</span>
+        <span id="LOVE" class="hide">LOVE</span>
+        <span id="YOU" class="hide">YOU</span>
+      </h1>
+      <h1 id="Jorja" class="hide">
+        <span>Jorja!</span>
       </h1>
 
-      <div class="heart happy delay5">❤</div>
-      <div class="heart happy delay2">❤</div>
-      <div class="heart happy delay1">❤</div>
-      <div class="heart happy">❤</div>
-      <div class="heart happy">❤</div>
-      <div class="white heart happy delay2">❤</div>
-      <div class="heart happy delay4">❤</div>
-      <div class="heart happy delay1">❤</div>
-      <div class="heart happy">❤</div>
-      <div class="white heart happy delay1">❤</div>
-      <div class="heart happy">❤</div>
-      <div class="heart happy delay1">❤</div>
-      <div class="heart happy">❤</div>
-      <div class="heart happy delay2">❤</div>
-      <div class="white heart happy delay5">❤</div>
-      <div class="white heart happy delay4">❤</div>
-      <div class="heart happy delay1">❤</div>
-      <div class="heart happy delay5">❤</div>
-      <div class="heart happy delay4">❤</div>
-      <div class="white heart happy delay2">❤</div>
-      <div class="heart happy">❤</div>
-      <div class="white heart happy delay4">❤</div>
-      <div class="heart happy delay3">❤</div>
-      <div class="heart happy delay4">❤</div>
-      <div class="heart happy">❤</div>
-      <div class="heart happy delay1">❤</div>
-      <div class="heart happy delay4">❤</div>
-      <div class="heart happy">❤</div>
-      <div class="heart happy delay2">❤</div>
-      <div class="heart happy delay2">❤</div>
-      <div class="white heart happy">❤</div>
-      <div class="heart happy delay5">❤</div>
-      <div class="heart happy delay4">❤</div>
-      <div class="white heart happy">❤</div>
-      <div class="heart happy delay3">❤</div>
-      <div class="heart happy delay4">❤</div>
-      <div class="heart happy delay2">❤</div>
+      <div id="hearts">      
+        <div class="heart happy delay5">❤</div>
+        <div class="heart happy delay2">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="heart happy delay1">❤</div>
+        <div class="whiteheart happy delay6">❤</div>
+        <div class="heart happy delay8">❤</div>
+        <div class="heart happy delay7">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="heart happy delay4">❤</div>
+        <div class="white heart happy delay2">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="white heart happy delay6">❤</div>
+        <div class="white heart happy delay4">❤</div>
+        <div class="heart happy delay8">❤</div>
+        <div class="heart happy delay7">❤</div>
+        <div class="white heart happy">❤</div>
+        <div class="white heart happy delay1">❤</div>
+        <div class="heart happy delay6">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="white heart happy delay2">❤</div>
+        <div class="heart happy delay4">❤</div>
+        <div class="heart happy delay8">❤</div>
+        <div class="heart happy delay7">❤</div>
+        <div class="white heart happy delay4">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="heart happy delay1">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="heart happy delay2">❤</div>
+        <div class="heart happy delay4">❤</div>
+        <div class="white heart happy delay5">❤</div>
+        <div class="heart happy delay6">❤</div>
+        <div class="heart happy delay1">❤</div>
+        <div class="heart happy delay5">❤</div>
+        <div class="heart happy delay7">❤</div>
+        <div class="heart happy delay6">❤</div>
+        <div class="white heart happy delay4">❤</div>
+        <div class="heart happy delay8">❤</div>
+        <div class="white heart happy delay2">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="heart happy delay3">❤</div>
+        <div class="white heart happy">❤</div>
+        <div class="heart happy delay1">❤</div>
+        <div class="heart happy delay6">❤</div>
+        <div class="heart happy delay7">❤</div>
+        <div class="heart happy delay4">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="white heart happy delay4">❤</div>
+        <div class="heart happy delay8">❤</div>
+        <div class="heart happy delay6">❤</div>
+        <div class="heart happy delay2">❤</div>
+        <div class="white heart happy">❤</div>
+        <div class="heart happy delay4">❤</div>
+        <div class="heart happy delay7">❤</div>
+        <div class="heart happy delay2">❤</div>
+        <div class="heart happy delay1">❤</div>
+        <div class="heart happy delay8">❤</div>
+        <div class="white heart happy delay2">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="heart happy delay8">❤</div>
+        <div class="heart happy delay5">❤</div>
+        <div class="heart happy delay4">❤</div>
+        <div class="heart happy delay7">❤</div>
+        <div class="white heart happy">❤</div>
+        <div class="heart happy delay3">❤</div>
+        <div class="heart happy delay4">❤</div>
+        <div class="heart happy">❤</div>
+        <div class="heart happy delay1">❤</div>
+        <div class="heart happy delay6">❤</div>
+        <div class="heart happy delay3">❤</div>
+        <div class="white heart happy">❤</div>
+        <div class="heart happy delay7">❤</div>
+        <div class="heart happy delay5">❤</div>
+        <div class="heart happy delay6">❤</div>
+        <div class="white heart happy">❤</div>
+        <div class="heart happy delay4">❤</div>
+        <div class="heart happy delay6">❤</div>
+        <div class="heart happy delay5">❤</div>
+      </div>
+    </div>
+
+    <div id="happy-valentines" class="hide">
+      <h4>Happy Valentine's Day, Darling!</h4>
+    </div>
+
+    <div id="made-by" class="hide">
+      <h5>Made by <a href="http://twitter.com/ahmadkadhim">Ahmad Kadhim</a></h5>
     </div>
 
 

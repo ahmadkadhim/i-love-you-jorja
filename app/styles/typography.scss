@@ -1,20 +1,47 @@
 
 h1 {
-	color: white;
 	z-index: 2;
 	position: relative;
-	font-size: 3rem;
 	text-align: center;
 	text-shadow: 0px 1px 3px rgba(0,0,0,.9);
-	font-family: 'cubano', Helvetica, sans-serif;
-	margin-top: 3.25em;
-	margin-bottom: -4.5em;
 	margin-left: 1rem;
+	transition: opacity 50ms ease-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+	font-family: 'cubano', Helvetica, sans-serif;
+}
+
+#i-love-you {
+	margin-top: 2.25em;
+	font-family: 'cubano', Helvetica, sans-serif;
+	font-size: 3rem;
 }
 
 #Jorja {
 	font-size: 8rem;
 	font-family: 'corner-store', Helvetica, sans-serif;
-	margin-left: -.3em;
+	margin-left: -4.5rem;
 	line-height: 2;
+	transform: rotateZ(-5deg);
 }
+
+#happy-valentines, #made-by {
+	position: fixed;
+	width: 100%;
+	bottom: 2.25em;
+	text-align: center;
+	transition: all .5s ease;
+}
+
+#made-by {
+	bottom: 0.5em;
+	z-index: 5;
+	
+	a {
+		color: #FF3F6F;
+		text-decoration: underline;
+	}
+}
+
